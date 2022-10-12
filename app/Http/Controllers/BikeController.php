@@ -46,9 +46,9 @@ class BikeController extends Controller
      * @param  \App\Models\Bike  $bike
      * @return \Illuminate\Http\Response
      */
-    public function show(Bike $bike)
+    public function show()
     {
-        //
+        return view('bike.show');
     }
 
     /**

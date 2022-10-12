@@ -61,7 +61,7 @@
               </a>
             </td>
             <td>
-              <a href="{{ url('') }}">show</a>
+              <a href="{{ url('show/1/Mountain Bike/1900') }}">show</a>
             </td>
           </tr>
           <tr>
@@ -79,7 +79,7 @@
               <a href="{{ url('edit/2') }}">edit</a>
             </td>
             <td>
-              <a href="{{ url('') }}">show</a>
+              <a href="{{ url('show/2/Street Bike/2500') }}">show</a>
             </td>
           </tr>
         </tbody>
