@@ -57,7 +57,7 @@ class BikeController extends Controller
      * @param  \App\Models\Bike  $bike
      * @return \Illuminate\Http\Response
      */
-    public function edit(Bike $bike)
+    public function edit($id)
     {
         //
     }
@@ -80,8 +80,8 @@ class BikeController extends Controller
      * @param  \App\Models\Bike  $bike
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Bike $bike)
+    public function destroy($id)
     {
-        //
+        return 'Eliminar producto con id ' . $id;
     }
 }

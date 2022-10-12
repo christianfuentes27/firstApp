@@ -49,10 +49,16 @@
             <td>Mountain Bike</td>
             <td>1900</td>
             <td>
-              <a href="{{ url('') }}">delete</a>
+              <a href="{{ url('delete/1') }}">
+                @csrf
+                @method('delete')
+                delete
+              </a>
             </td>
             <td>
-              <a href="{{ url('') }}">edit</a>
+              <a href="{{ url('') }}">
+                edit
+              </a>
             </td>
             <td>
               <a href="{{ url('') }}">show</a>
@@ -63,7 +69,11 @@
             <td>Street Bike</td>
             <td>2500</td>
             <td>
-              <a href="{{ url('') }}">delete</a>
+              <a href="{{ url('delete/2') }}">
+                @csrf
+                @method('delete')
+                delete
+              </a>
             </td>
             <td>
               <a href="{{ url('') }}">edit</a>
