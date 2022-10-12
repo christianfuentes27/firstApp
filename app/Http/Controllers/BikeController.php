@@ -13,18 +13,9 @@ class BikeController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function goodmorning() {
-        return view('bike.gm');
-        // return 'good morning';
-    }
-
-    public function goodnight() {
-        return view('bike.gn');
-    }
-
     public function index()
     {
-        //sdafas
+        return view('welcome');
     }
 
     /**
@@ -34,7 +25,7 @@ class BikeController extends Controller
      */
     public function create()
     {
-        //
+        return view('bike.create');
     }
 
     /**
@@ -45,7 +36,8 @@ class BikeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return "Aqui se insertaria el producto " . $request->get('nombre') . 
+                " con un precio de " . $request->get('precio') . " €";
     }
 
     /**

@@ -74,13 +74,10 @@
           </tr>
         </tbody>
       </table>
-      <a href="" class="btn btn-success">Add product</a>
+      <a href="{{ url('create') }}" class="btn btn-success">Add product</a>
     </div>
   </div>
 
-  <div class="row" style="margin: auto">
-
-  </div>
   <footer class="container mt-3">
     <p>&copy; IZV 2022</p>
   </footer>
@@ -91,7 +88,6 @@
     src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  @yield('scripts')
 </body>
 
 </html>

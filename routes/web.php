@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('goodmorning', [BikeController::class, 'goodmorning']);
-Route::get('goodnight', [BikeController::class, 'goodnight']);
+Route::get('/', [BikeController::class, 'index']);
+Route::get('create', [BikeController::class, 'create']);
+Route::post('store', [BikeController::class, 'store']);
