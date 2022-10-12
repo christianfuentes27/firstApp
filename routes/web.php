@@ -19,3 +19,5 @@ Route::get('/', [BikeController::class, 'index']);
 Route::get('create', [BikeController::class, 'create']);
 Route::post('store', [BikeController::class, 'store']);
 Route::get('delete/{id}', [BikeController::class, 'destroy']);
+Route::get('edit/{id}', [BikeController::class, 'edit']);
+Route::post('update', [BikeController::class, 'update']);

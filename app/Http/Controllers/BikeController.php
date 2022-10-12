@@ -57,9 +57,9 @@ class BikeController extends Controller
      * @param  \App\Models\Bike  $bike
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit()
     {
-        //
+        return view('bike.edit');
     }
 
     /**
@@ -69,9 +69,9 @@ class BikeController extends Controller
      * @param  \App\Models\Bike  $bike
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Bike $bike)
+    public function update()
     {
-        //
+        return 'Aqui se actualizaria el producto en la base de datos';
     }
 
     /**
